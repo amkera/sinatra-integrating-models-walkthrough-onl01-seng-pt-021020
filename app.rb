@@ -16,7 +16,7 @@ class App < Sinatra::Base
     @analyzed_text = TextAnalyzer.new(text_from_user)
     erb :results
   end
-  
+  #We now have the instance of TextAnalyzer saved to an instance variable called @analyzed_text. This means that we can call it and its methods from the results.erb view that is being rendered, using erb tags!
   
   
   
